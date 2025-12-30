@@ -1,0 +1,28 @@
+.contante{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 400px;
+    margin-top: 50px;
+}
+.list-group li{
+    cursor: pointer;
+    }
+
+    .total-of-question p
+    {
+        text-align: center;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+    .finished_message{
+        color: #272829; 
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .finished_message > span{
+        color: #0f56da; 
+        font-size: 23px;
+    }
