@@ -1,16 +1,75 @@
 # React + Vite
+Quiz APP 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1233" height="702" alt="Capture d’écran 2025-12-30 163526" src="https://github.com/user-attachments/assets/65e6481c-f9ba-4240-9193-cc919bd25040" />
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a simple and interactive Quiz Application built using React.
+The app displays multiple-choice questions one by one, allows the user to select an answer, and provides instant feedback by highlighting correct and incorrect answers. At the end of the quiz, the user can see their final score and restart the quiz.
 
-## React Compiler
+The project is designed to practice core React concepts such as:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+useState
 
-## Expanding the ESLint configuration
+useRef
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Conditional rendering
+
+Component-based UI design
+
+✨ Features
+
+Multiple-choice quiz questions
+
+Real-time answer validation
+
+Score tracking
+
+Final result screen
+
+Reset quiz functionality
+
+Clean and responsive UI
+
+🛠️ Technologies Used
+
+React (Vite)
+
+JavaScript (ES6)
+
+CSS / Bootstrap
+
+React Icons
+
+src/
+│── components/
+│   └── Quiz.jsx
+│── assets/
+│   └── data.js
+│── App.jsx
+│── main.jsx
+│── Quiz.css
+
+
+How to Run the Project Locally
+
+Follow these steps to run the project on your computer:
+
+1️⃣ Clone the repository
+git clone https://github.com/your-username/quiz-app-react.git
+
+2️⃣ Navigate to the project folder
+cd quiz-app-react
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Start the development server
+npm run dev
+
+5️⃣ Open in browser
+
+After running the command, open your browser and go to:
+
+http://localhost:5173
+
