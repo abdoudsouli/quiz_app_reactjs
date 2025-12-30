@@ -1,4 +1,5 @@
 import './Quiz.css'
+import 'animate.css';
 import { useEffect, useRef, useState } from 'react';
 import { FaChartBar } from "react-icons/fa";
 import { FaCaretRight  } from "react-icons/fa";
@@ -25,11 +26,11 @@ export const Quiz = () => {
         if(!lock){
         setlock(true);
         if(answer === question.ans){
-            e.target.classList.add('bg-success', 'text-white');
+            e.target.classList.add('bg-success', 'text-white','animate__animated','animate__pulse');
             setScore(prev => prev + 1);
 
         }else{
-            e.target.classList.add('bg-danger', 'text-white');
+            e.target.classList.add('bg-warning', 'text-white','animate__animated','animate__shakeX');
             option_refs[question.ans-1].current.classList.add('bg-success', 'text-white');
             
         }}
@@ -39,7 +40,7 @@ export const Quiz = () => {
         if(lock){
         setlock (false);
       option_refs.forEach(option => {
-      option.current.classList.remove('bg-success', 'bg-danger', 'text-white');
+      option.current.classList.remove('bg-success', 'bg-warning', 'text-white','animate__animated','animate__shakeX','animate__pulse');
       });
         if(index + 1 < data.length){
             setIndex(prev => prev + 1);
@@ -48,7 +49,6 @@ export const Quiz = () => {
         }
     }
 }
-
 const reset = () => {
     setIndex(0);
     setScore(0);
@@ -59,7 +59,7 @@ const reset = () => {
     return (
        
         <div className='container d-flex justify-content-center contante'>
-            <div className="card">
+            <div className="card animate__animated animate__backInDown">
             <div className="card-body"> 
              <h5 className="card-title text-uppercase text-center">Quiz APP <FaChartBar /></h5>   
             {finished? 
